@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test store</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <meta name="robots" content="noindex,follow" />
+
+</head>
+
+<body>
+    <!-- section title -->
+    <!-- Header Menu of the Page -->
+    <header>
+
+        <!-- Top header menu containing
+         logo and Navigation bar -->
+        <div id="top-header">
+
+            <!-- Logo -->
+            <div id="logo">
+                <img src="images/skyweblogo.jpg" />
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Learn</a></li>
+                        <li><a href="#">Fit</a></li>
+                        <li><a href="#">Inspire</a></li>
+                        <li><a href="#">Conect</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Image menu in Header to contain an Image and
+         a sample text over that image -->
+        <div id="header-image-menu">
+
+        </div>
+    </header>
+    <main class="container">
+
+        <!-- Left Column / Shirt Image -->
+        <div class="left-column">
+            <img data-image="black" src="images/blackshirt.png" alt="">
+            <img data-image="blue" src="images/blueshirt.png" alt="">
+            <img data-image="red" class="active" src="images/redshirt.png" alt="">
+        </div>
+        <!-- Right Column -->
+        <div class="right-column">
+
+            <!-- Product Description -->
+            <div class="product-description">
+                <span>Shirts</span>
+                <h1>Palermo - twill 100s Dress Shirt</h1>
+                <!-- Product Pricing -->
+                <div class="product-price">
+                    <span>$90</span>
+                </div>
+                <!-- Product description -->
+                <div class="product description">
+                    <p>&#9885; GURANTEED FIT </p>
+                    <p>&#9876; 100% HAND CUT & SEWN</p>
+                    <p>&#x26CB; DELIVERY BETWEEN JAN 19- JAN 22 </p>
+                </div>
+                <!--cart-->
+                <div class="cart-btn">
+                    <a href="#" class="cart-btn">Add to cart</a>
+                </div>
+                <!-- Product Configuration -->
+                <div class="product-configuration">
+
+                    <!-- Product Color -->
+                    <div class="product-color">
+                        <span>Color</span>
+
+                        <div class="color-choose">
+                            <div>
+                                <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                                <label for="red"><span></span></label>
+                            </div>
+                            <div>
+                                <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                                <label for="blue"><span></span></label>
+                            </div>
+                            <div>
+                                <input data-image="black" type="radio" id="black" name="color" value="black">
+                                <label for="black"><span></span></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Description -->
+                    <button class="accordion">ABOUT THIS BLEND</button>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                    <button class="accordion">Tasting notes</button>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                    <button class="accordion">Shipping</button>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                    <button class="accordion">Compost your packaging</button>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>

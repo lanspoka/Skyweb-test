@@ -1,0 +1,372 @@
+/* Basic Styling */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+}
+
+
+/* Section*/
+
+header {
+    overflow: hidden;
+}
+
+#top-header {
+    text-align: center;
+    height: 60px;
+}
+
+#logo {
+    float: left;
+    padding: none;
+    margin: none;
+    height: 60px;
+    width: 30%;
+}
+
+#logo img {
+    width: 60%;
+    float: left;
+    padding: 10px 0px;
+}
+
+#menu {
+    float: right;
+    width: 70%;
+    height: 100%;
+    margin: none;
+}
+
+#menu ul {
+    text-align: center;
+    float: right;
+    margin: none;
+    background: #0074D9;
+}
+
+#menu li {
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+
+#menu li a,
+#menu li span {
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+#menu li a {
+    color: #FFF;
+}
+
+#menu li:hover a,
+#menu li span {
+    background: #FFF;
+    color: #0074D9;
+    border-left: 1px solid #0074D9;
+    text-decoration: none;
+}
+
+
+/*************************/
+
+
+/* Styling Header */
+
+
+/*************************/
+
+header {
+    overflow: hidden;
+}
+
+#top-header {
+    text-align: center;
+    height: 60px;
+}
+
+
+/* Styling Logo */
+
+#logo {
+    float: left;
+    padding: none;
+    margin: none;
+    height: 60px;
+    width: 30%;
+}
+
+#logo img {
+    width: 60%;
+    float: left;
+    padding: 10px 0px;
+}
+
+
+/* Styling Navigation Menu */
+
+#menu {
+    float: left;
+    width: 40%;
+    height: 50%;
+    margin: none;
+}
+
+#menu ul {
+    text-align: center;
+    float: right;
+    margin: none;
+    background: #c2c3c505;
+}
+
+#menu li {
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+
+#menu li a,
+#menu li span {
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+#menu li a {
+    color: rgb(0, 0, 0);
+}
+
+#menu li:hover a,
+#menu li span {
+    background: #FFF;
+    color: #000000;
+    border-left: 1px solid #000000;
+    text-decoration: none;
+}
+
+
+/* Columns */
+
+.left-column {
+    width: 65%;
+    position: relative;
+}
+
+.right-column {
+    width: 35%;
+    margin-top: 60px;
+}
+
+
+/* Left Column */
+
+.left-column img {
+    width: 40%;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.left-column img.active {
+    opacity: 1;
+}
+
+
+/* Right Column */
+
+
+/* accordion*/
+
+.accordion {
+    background-color: rgba(238, 238, 238, 0);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: rgb(252, 251, 251);
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+
+/* Product Description */
+
+.product-description {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+}
+
+.product-description span {
+    font-size: 10px;
+    color: #358ED7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.product-description h1 {
+    font-weight: 300;
+    font-size: 30px;
+    color: #001b35;
+    letter-spacing: -2px;
+}
+
+.product-description p {
+    font-size: 15px;
+    font-weight: 200;
+    color: #86939E;
+    line-height: 20px;
+}
+
+
+/* Product Configuration */
+
+.product-color span,
+.cable-config span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #86939E;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+
+/* Product Color */
+
+.product-color {
+    margin-bottom: 30px;
+}
+
+.color-choose div {
+    display: inline-block;
+}
+
+.color-choose input[type="radio"] {
+    display: none;
+}
+
+.color-choose input[type="radio"]+label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.color-choose input[type="radio"]+label span {
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+}
+
+.color-choose input[type="radio"]#red+label span {
+    background-color: #C91524;
+}
+
+.color-choose input[type="radio"]#blue+label span {
+    background-color: #314780;
+}
+
+.color-choose input[type="radio"]#black+label span {
+    background-color: #323232;
+}
+
+.color-choose input[type="radio"]:checked+label span {
+    background-image: url(images/check-icn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Product Price */
+
+.product-price {
+    display: flex;
+    align-items: center;
+}
+
+.product-price span {
+    font-size: 20px;
+    font-weight: 300;
+    color: #43474D;
+    margin-right: 20px;
+}
+
+.cart-btn {
+    display: inline-block;
+    background-color: #2c3779;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 2px 80px;
+    position: relative;
+    margin: 5px;
+    transition: all .5s;
+}
+
+.cart-btn:hover {
+    background-color: #4042ac;
+}
+
+
+/* Responsive */
+
+@media (max-width: 940px) {
+    .container {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+    .left-column img {
+        width: 300px;
+        right: 0;
+        top: -65px;
+        left: initial;
+    }
+}
+
+@media (max-width: 535px) {
+    .left-column img {
+        width: 220px;
+        top: -85px;
+    }
+}
